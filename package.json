@@ -9,7 +9,10 @@
     "postinstall": "nuxi prepare"
   },
   "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.6.7",
+    "@tailwindcss/typography": "^0.5.9",
     "@types/node": "^18",
+    "daisyui": "^2.51.6",
     "nuxt": "^3.4.3",
     "tailwindcss": "^3.3.2"
   }
