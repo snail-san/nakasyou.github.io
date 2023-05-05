@@ -11,7 +11,7 @@
         class="rounded-full w-24 h-24" />
       <div class="ext-2xl">Shotaro Nakamura</div>
     </div>
-    <div class="sm:w-11/12 w-9/12">
+    <div class="mx-10">
       <div>About</div>
       <div>
         <div>
