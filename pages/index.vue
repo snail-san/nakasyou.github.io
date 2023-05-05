@@ -4,7 +4,7 @@
 <template>
   <div>
     <div class="text-center text-3xl">nakasyou's profile</div>
-    <div class="flex items-center text-center">
+    <div class="flex items-center justify-center text-center">
       <div><img
         alt="nakasyou-icon"
         src="~/assets/nakasyou-icon.png"
