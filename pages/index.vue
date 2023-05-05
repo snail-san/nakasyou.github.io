@@ -4,15 +4,15 @@
 <template>
   <div>
     <div class="text-center text-3xl">nakasyou's profile</div>
-    <div class="flex items-center">
-      <img
+    <div class="flex items-center text-center">
+      <div><img
         alt="nakasyou-icon"
         src="~/assets/nakasyou-icon.png"
-        class="rounded-full w-24 h-24" />
+        class="rounded-full w-24 h-24" /></div>
       <div class="ext-2xl">Shotaro Nakamura</div>
     </div>
     <div class="mx-10">
-      <div>About</div>
+      <div class="text-2xl">About</div>
       <div>
         <div>
           <div>Shotaro Nakamura</div>
