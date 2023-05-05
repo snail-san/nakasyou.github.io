@@ -11,13 +11,15 @@
         class="rounded-full w-24 h-24" />
       <div class="ext-2xl">Shotaro Nakamura</div>
     </div>
-    <div>About</div>
-    <div>
+    <div class="sm:w-11/12 w-9/12">
+      <div>About</div>
       <div>
-        <div>Shotaro Nakamura</div>
-        <div class="text-sm text-slate-400">中村 承太郎</div>
+        <div>
+          <div>Shotaro Nakamura</div>
+          <div class="text-sm text-slate-400">中村 承太郎</div>
+        </div>
+        <div>Web開発と分散型アプリケーション、サイバーセキュリティに興味がある中学2年生</div>
       </div>
-      <div>Web開発と分散型アプリケーション、サイバーセキュリティに興味がある中学2年生</div>
     </div>
   </div>
 </template>
