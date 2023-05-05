@@ -35,5 +35,8 @@
         </div>
       </div>
     </div>
+    <div>
+      <a class="btn btn-outline" href="https://github.com/nakasyou">GitHub</buttona>
+    </div>
   </div>
 </template>
