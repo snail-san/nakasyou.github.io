@@ -36,7 +36,7 @@
       </div>
     </div>
     <div>
-      <a class="btn btn-outline" href="https://github.com/nakasyou">GitHub</buttona>
+      <a class="btn btn-outline" href="https://github.com/nakasyou">/nakasyou</a>
     </div>
   </div>
 </template>
