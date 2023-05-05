@@ -2,6 +2,7 @@
 import {
   IconBrandGithub,
   IconBrandTwitter,
+  IconBrandMatrix,
 } from '@tabler/icons-vue'
 import SimpleIcons from "../components/simpleicons.vue"
 
@@ -50,7 +51,7 @@ import SimpleIcons from "../components/simpleicons.vue"
         <span>@nakasyou0</span>
       </a>
       <a class="btn btn-outline" href="https://matrix.to/#/@nakasyou:matrix.org">
-        <SimpleIcons icon="matrix" class="inline" />
+        <IconBrandMatrix/>
         <span>@nakasyou:matrix.org</span>
       </a>
     </div>
