@@ -7,6 +7,7 @@ import {
   IconCode,
 } from '@tabler/icons-vue'
 import SimpleIcons from "../components/simpleicons.vue"
+import MinWorks from "../comonents/min-works.vue"
 
 const myDiscordIdCopy = () => {
   if(navigator.clipboard){
@@ -54,6 +55,8 @@ const myDiscordIdCopy = () => {
           <li>2019 Scratch のアカウントを作ってみる</li>
         </ul>
       </div>
+      <div class="text-2xl">Works</div>
+      <MinWorks />
     </div>
     <div class="flex flex-wrap items-center justify-center">
       <a class="btn btn-outline" href="https://github.com/nakasyou">
