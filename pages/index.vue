@@ -3,7 +3,8 @@ import {
   IconBrandGithub,
   IconBrandTwitter,
 } from '@tabler/icons-vue'
-import { MatrixIcon, } from 'vue-simple-icons'
+import SimpleIcons from "../components/simpleicons.vue"
+
 </script>
 <template>
   <div>
@@ -48,7 +49,7 @@ import { MatrixIcon, } from 'vue-simple-icons'
         <IconBrandTwitter />
         <span>@nakasyou0</span>
       </a>
-      <MatrixIcon size="25" />
+      <SimpleIcons icon="matrix" />
     </div>
   </div>
 </template>
