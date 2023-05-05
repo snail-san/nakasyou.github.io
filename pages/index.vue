@@ -5,7 +5,7 @@
   <div>
     <h1 class="text-center">nakasyou's profile</h1>
     <div class="flex">
-      <img alt="nakasyou-icon" href="https://avatars.githubusercontent.com/u/79000684?v=4">
+      <img alt="nakasyou-icon" href="~/assets/nakasyou-icon.png">
       <div>Shotaro Nakamura</div>
     </div>
   </div>
