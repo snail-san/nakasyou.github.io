@@ -18,8 +18,21 @@
           <div>Shotaro Nakamura</div>
           <div class="text-sm text-slate-400">中村 承太郎</div>
         </div>
-        <br />
         <div>Web開発と分散型アプリケーション、サイバーセキュリティに興味がある中学2年生</div>
+      </div>
+      <div>
+        <div class="text-2xl">Skills</div>
+        <div class="indent-1">
+          <ul>
+            <li>Python: ★★★★★</li>
+            <li>JavaScript: ★★★★★</li>
+            <li>Deno: ⭐︎★★★★</li>
+            <li>TypeScript: ⭐︎★★★★</li>
+            <li>HTML&amp;CSS: ⭐︎★★★★</li>
+            <li>Vue.js ⭐︎⭐︎★★★</li>
+            <li>React ⭐︎⭐︎⭐︎★★</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
