@@ -767,6 +767,18 @@
     estree-walker "^2.0.2"
     picomatch "^2.3.1"
 
+"@tabler/icons-vue@^2.17.0":
+  version "2.17.0"
+  resolved "https://registry.yarnpkg.com/@tabler/icons-vue/-/icons-vue-2.17.0.tgz#a8ee4f356515a4a3d0d913f5bc8a6f8f3332a71d"
+  integrity sha512-b3wSJV9OCH9XOwfT9mSn3BQ2YWIMoX35R+xFK5HuRkqJ3psCQeUMTg35prXcZQCMztdxZNbz788V21bq0LFe9g==
+  dependencies:
+    "@tabler/icons" "2.17.0"
+
+"@tabler/icons@2.17.0":
+  version "2.17.0"
+  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-2.17.0.tgz#3b5ac3d41576894d3e18cd8014ba8ce33f3634be"
+  integrity sha512-UeJaylOGNRhQKyDlgZfrQ3UPSGlfVQuXcmCsTYeXioKKepibW6VZ3H36Lo1jvBTBkQD2e9m+k2NxwkztOTXwrA==
+
 "@tailwindcss/typography@^0.5.9":
   version "0.5.9"
   resolved "https://registry.npmjs.org/@tailwindcss/typography/-/typography-0.5.9.tgz"
