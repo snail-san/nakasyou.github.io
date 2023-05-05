@@ -41,7 +41,7 @@ import SimpleIcons from "../components/simpleicons.vue"
         </div>
       </div>
     </div>
-    <div class="flex items-center justify-center">
+    <div class="flex flex-wrap items-center justify-center">
       <a class="btn btn-outline" href="https://github.com/nakasyou">
         <IconBrandGithub />
         <span>@nakasyou</span>
