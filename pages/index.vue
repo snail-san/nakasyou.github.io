@@ -48,7 +48,7 @@ import { MatrixIcon, } from 'vue-simple-icons'
         <IconBrandTwitter />
         <span>@nakasyou0</span>
       </a>
-      <MatrixIcon />
+      <MatrixIcon size="25" />
     </div>
   </div>
 </template>
