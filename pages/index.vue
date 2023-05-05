@@ -3,9 +3,15 @@ import {
   IconBrandGithub,
   IconBrandTwitter,
   IconBrandMatrix,
+  IconBrandDiscord,
 } from '@tabler/icons-vue'
 import SimpleIcons from "../components/simpleicons.vue"
 
+const myDiscordIdCopy = () => {
+  if(navigator.clipboard){
+    navigator.clipboard.writeText("nakasyou#1395");
+  }else alert("Copy failed...")
+}
 </script>
 <template>
   <div>
@@ -54,6 +60,12 @@ import SimpleIcons from "../components/simpleicons.vue"
         <IconBrandMatrix/>
         <span>@nakasyou:matrix.org</span>
       </a>
+      <div class="tooltip" data-tip="Copyed!">
+        <a class="btn btn-outline" href="https://matrix.to/#/@nakasyou:matrix.org" @click="myDiscordIdCopy">
+          <IconBrandDiscord/>
+          <span>nakasyou#1395</span>
+        </a>
+      </div>
     </div>
   </div>
 </template>
