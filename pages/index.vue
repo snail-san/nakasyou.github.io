@@ -4,6 +4,7 @@ import {
   IconBrandTwitter,
   IconBrandMatrix,
   IconBrandDiscord,
+  IconCode,
 } from '@tabler/icons-vue'
 import SimpleIcons from "../components/simpleicons.vue"
 
@@ -57,15 +58,23 @@ const myDiscordIdCopy = () => {
         <span>@nakasyou0</span>
       </a>
       <a class="btn btn-outline" href="https://matrix.to/#/@nakasyou:matrix.org">
-        <IconBrandMatrix/>
+        <IconBrandMatrix />
         <span>@nakasyou:matrix.org</span>
       </a>
       <div class="tooltip" data-tip="Copyed!">
         <a class="btn btn-outline" @click="myDiscordIdCopy">
-          <IconBrandDiscord/>
+          <IconBrandDiscord />
           <span>nakasyou#1395</span>
         </a>
       </div>
+      <a class="btn btn-outline flex" href="https://scratch.mit.edu/users/nakasyou1103">
+        <SimpleIcons icon="scratch" />
+        <span>@nakasyou1103</span>
+      </a>
+      <a class="btn btn-outline" href="https://github.com/nakasyou/nakasyou.github.io">
+        <IconCode/>
+        <span>Source Code</span>
+      </a>
     </div>
   </div>
 </template>
