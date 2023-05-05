@@ -47,6 +47,13 @@ const myDiscordIdCopy = () => {
           </ul>
         </div>
       </div>
+      <div class="text-2xl">Bio</div>
+      <div class="indent-1">
+        <ul>
+          <li>2009/11/3 生まれる</li>
+          <li>2019 Scratch のアカウントを作ってみる</li>
+        </ul>
+      </div>
     </div>
     <div class="flex flex-wrap items-center justify-center">
       <a class="btn btn-outline" href="https://github.com/nakasyou">
