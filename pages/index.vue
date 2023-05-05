@@ -13,11 +13,12 @@
     </div>
     <div class="mx-10">
       <div class="text-2xl">About</div>
-      <div>
+      <div class="indent-1">
         <div>
           <div>Shotaro Nakamura</div>
           <div class="text-sm text-slate-400">中村 承太郎</div>
         </div>
+        <br />
         <div>Web開発と分散型アプリケーション、サイバーセキュリティに興味がある中学2年生</div>
       </div>
     </div>
