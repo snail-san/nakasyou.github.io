@@ -50,7 +50,7 @@ import SimpleIcons from "../components/simpleicons.vue"
         <span>@nakasyou0</span>
       </a>
       <a class="btn btn-outline" href="https://matrix.to/#/@nakasyou:matrix.org">
-        <SimpleIcons icon="matrix" />
+        <SimpleIcons icon="matrix" class="inline" />
         <span>@nakasyou:matrix.org</span>
       </a>
     </div>
