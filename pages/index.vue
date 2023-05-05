@@ -20,9 +20,9 @@
         </div>
         <div>Web開発と分散型アプリケーション、サイバーセキュリティに興味がある中学2年生</div>
       </div>
-      <div>
-        <div class="text-2xl">Skills</div>
-        <div class="indent-1">
+      <div class="text-2xl">Skills</div>
+      <div class="indent-1">
+        <div>
           <ul class="flex flex-wrap">
             <li>Python: ★★★★★</li>
             <li>JavaScript: ★★★★★</li>
