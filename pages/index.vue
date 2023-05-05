@@ -61,7 +61,7 @@ const myDiscordIdCopy = () => {
         <span>@nakasyou:matrix.org</span>
       </a>
       <div class="tooltip" data-tip="Copyed!">
-        <a class="btn btn-outline" href="https://matrix.to/#/@nakasyou:matrix.org" @click="myDiscordIdCopy">
+        <a class="btn btn-outline" @click="myDiscordIdCopy">
           <IconBrandDiscord/>
           <span>nakasyou#1395</span>
         </a>
