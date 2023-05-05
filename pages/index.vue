@@ -1,5 +1,5 @@
 <script setup type="ts">
-
+import { IconBrandGithub } from '@tabler/icons-vue';
 </script>
 <template>
   <div>
@@ -36,7 +36,10 @@
       </div>
     </div>
     <div>
-      <a class="btn btn-outline" href="https://github.com/nakasyou">/nakasyou</a>
+      <a class="btn btn-outline" href="https://github.com/nakasyou">
+        <IconBrandGithub />
+        <span>@nakasyou</span>
+      </a>
     </div>
   </div>
 </template>
