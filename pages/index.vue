@@ -7,7 +7,7 @@ import {
   IconCode,
 } from '@tabler/icons-vue'
 import SimpleIcons from "../components/simpleicons.vue"
-import MinWorks from "../comonents/min-works.vue"
+import MinWorks from "../components/min-works.vue"
 
 const myDiscordIdCopy = () => {
   if(navigator.clipboard){
