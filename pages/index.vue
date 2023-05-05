@@ -23,7 +23,7 @@
       <div>
         <div class="text-2xl">Skills</div>
         <div class="indent-1">
-          <ul class="flex">
+          <ul class="flex flex-wrap">
             <li>Python: ★★★★★</li>
             <li>JavaScript: ★★★★★</li>
             <li>Deno: ⭐︎★★★★</li>
