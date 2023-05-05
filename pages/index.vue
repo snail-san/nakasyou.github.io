@@ -1,5 +1,8 @@
 <script setup type="ts">
-
+import {
+  IconBrandGithub,
+  IconBrandTwitter,
+} from '@tabler/icons-vue';
 </script>
 <template>
   <div>
@@ -16,7 +19,7 @@
       <div class="indent-1">
         <div>
           <div>Shotaro Nakamura</div>
-          <div class="text-sm text-slate-400">中村 承太郎</div>
+          <div class="text-sm text-slate-400 indent-2">中村 承太郎</div>
         </div>
         <div>Web開発と分散型アプリケーション、サイバーセキュリティに興味がある中学2年生</div>
       </div>
@@ -35,8 +38,15 @@
         </div>
       </div>
     </div>
-    <div>
-      <a class="btn btn-outline" href="https://github.com/nakasyou">/nakasyou</a>
+    <div class="flex items-center justify-center">
+      <a class="btn btn-outline" href="https://github.com/nakasyou">
+        <IconBrandGithub />
+        <span>@nakasyou</span>
+      </a>
+      <a class="btn btn-outline" href="https://twitter.com/nakasyou0">
+        <IconBrandTwitter />
+        <span>@nakasyou0</span>
+      </a>
     </div>
   </div>
 </template>
