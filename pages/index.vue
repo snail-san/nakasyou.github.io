@@ -49,7 +49,10 @@ import SimpleIcons from "../components/simpleicons.vue"
         <IconBrandTwitter />
         <span>@nakasyou0</span>
       </a>
-      <SimpleIcons icon="matrix" />
+      <a class="btn btn-outline" href="https://twitter.com/nakasyou0">
+        <SimpleIcons icon="matrix" />
+        <span>@nakasyou:matrix.org</span>
+      </a>
     </div>
   </div>
 </template>
