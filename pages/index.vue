@@ -38,7 +38,7 @@ import {
         </div>
       </div>
     </div>
-    <div>
+    <div class="flex items-center justify-center">
       <a class="btn btn-outline" href="https://github.com/nakasyou">
         <IconBrandGithub />
         <span>@nakasyou</span>
