@@ -7,7 +7,8 @@ type Works = Work[]
 
 const works: Works = [
   {
-    title: ""
+    title: "Liberluna page",
+    link: "https://liberluna.github.io",
   }
 ]
 
