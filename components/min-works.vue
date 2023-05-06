@@ -8,10 +8,10 @@ import works from "./works.ts"
         <div class="card w-40 bg-base-100 shadow-xl image-full">
           <figure><img :src="work.imageUrl? work.imageUrl : '/work-images/no-image.png'" :alt="work.title" /></figure>
           <div class="card-body">
-            <div class="card-title">
+            <div class="card-title break-all">
               {{ work.title }}
             </div>
-            <p>{{ work.desc }}</p>
+            <p class="break-all">{{ work.desc }}</p>
           </div>
         </div>
       </a>
