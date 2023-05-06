@@ -4,7 +4,7 @@ import Header from "../../components/header.vue"
 <template>
   <div>
     <header><Header/></header>
-    <div class="mx-1">
+    <div class="mx-10">
       <h2>Posts</h2>
       <p>nakasyouのブログです。</p>
       <ContentList class="grid md:grid-cols-2 grid-cols-3" v-slot="{ list }" :query="{ path: '/post', sort: { date: -1 } }">
