@@ -81,7 +81,7 @@ const myDiscordIdCopy = () => {
             </thead>
             <tbody>
               <tr>
-                <td><a href="https://harusamemelon.github.io">はるさめのホームページ</a></td>
+                <td><a href="https://harusamemelon.github.io" class="link">はるさめのホームページ</a></td>
                 <td>はるさめ</td>
                 <td>2023-05-06</td>
               </tr>
