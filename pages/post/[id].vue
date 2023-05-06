@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import {
+  IconCalendarEvent,
+  IconReload,
+} from '@tabler/icons-vue'
+</script>
 <template>
   <div>
     <ContentDoc v-slot="{ doc: page }">
@@ -5,7 +11,16 @@
         <img :src="page.thumbnail" alt="thumbnail" class="w-5/6 h-4/6 object-cover ">
       </div>
       <h1>{{ page.title }}</h1>
-      <div></div>
+      <div>
+        <div>
+          <IconCalendarEvent />
+          <span>{{ page.date }}</span>
+        </div>
+        <div>
+          <IconReload />
+          <span>{{ page.update }}</span>
+        </div>
+      </div>
       <ContentRenderer :key="page._id" :value="page"></ContentRenderer>
     </ContentDoc>
   </div>
