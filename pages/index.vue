@@ -57,6 +57,9 @@ const myDiscordIdCopy = () => {
       </div>
       <div class="text-2xl">Works</div>
       <MinWorks />
+      <a class="btn btn-primary" href="works">
+        Show More
+      </a>
     </div>
     <br />
     <div class="flex flex-wrap items-center justify-center">
