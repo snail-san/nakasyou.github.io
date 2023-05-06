@@ -2,10 +2,10 @@
   <div>
     <h1>nakasyou's Posts</h1>
     <p>nakasyouのブログです。</p>
-    <ContentList class="flex flex-wrap" v-slot="{ list }" :query="{ path: '/post', sort: { date: -1 } }">
+    <ContentList class="grid md:grid-cols-2 grid-cols-3" v-slot="{ list }" :query="{ path: '/post', sort: { date: -1 } }">
       <article v-for="page in list" :key="page._path">
         <nuxt-link :to="page._path">
-          <div class="card w-96 bg-base-100 shadow-xl m-1">
+          <div class="card bg-base-100 shadow-xl m-1">
             <figure><img :src="page.thumbnail" alt="thumbnail" /></figure>
             <div class="card-body">
               <div class="card-title">{{ page.title }}</div>
