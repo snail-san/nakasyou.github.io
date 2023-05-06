@@ -6,7 +6,7 @@ import works from "./works.ts"
     <div v-for = "work in works" :key="work.link" class="carousel-item">
       <a :href="work.link">
         <div class="card w-40 bg-base-100 shadow-xl image-full">
-          <figure><img :src="work.imageName? work.imageName : ''" alt="image" /></figure>
+          <figure><img :src="work.imageUrl? work.imageUrl : ''" alt="image" /></figure>
         </div>
         <div class="card-body">
           <div class="card-title">
