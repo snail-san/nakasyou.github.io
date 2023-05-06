@@ -21,11 +21,11 @@ const yyyymmdd = (dt: Date): string => {
       <div class="flex">
         <div class="flex">
           <IconCalendarEvent />
-          <div>{{ typeof (page.date) }}</div>
+          <div>{{ yyyymmdd(new Date(page.date)) }}</div>
         </div>
         <div class="flex">
           <IconReload />
-          <div>{{ (page.update) }}</div>
+          <div>{{ yyyymmdd(new Date(page.update)) }}</div>
         </div>
       </div>
       <ContentRenderer :key="page._id" :value="page"></ContentRenderer>
