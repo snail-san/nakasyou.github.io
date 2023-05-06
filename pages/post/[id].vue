@@ -3,6 +3,7 @@ import {
   IconCalendarEvent,
   IconReload,
 } from '@tabler/icons-vue'
+import Header from "../components/header.vue"
 
 const yyyymmdd = (dt: Date): string => {
   const y = dt.getFullYear()

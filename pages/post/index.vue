@@ -1,6 +1,10 @@
+<script setup lang="ts">
+import Header from "../components/header.vue"
+</script>
 <template>
   <div>
-    <h1>nakasyou's Posts</h1>
+    <header><Header/></header>
+    <h2>Posts</h2>
     <p>nakasyouのブログです。</p>
     <ContentList class="grid md:grid-cols-2 grid-cols-3" v-slot="{ list }" :query="{ path: '/post', sort: { date: -1 } }">
       <article v-for="page in list" :key="page._path">
