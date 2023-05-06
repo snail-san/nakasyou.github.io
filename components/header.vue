@@ -35,7 +35,7 @@ const close = () =>{
         <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
           <li><NuxtLink to="/post">Blog</NuxtLink></li>
           <li><NuxtLink to="/works">Works</NuxtLink></li>
-          <li><button @click="close" class="btn">Close</button></li>
+          <li><button @click="close" class="btn btn-ghost">Close</button></li>
         </ul>
       </div>
     </div>

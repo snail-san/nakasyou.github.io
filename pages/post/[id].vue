@@ -19,15 +19,17 @@ const yyyymmdd = (dt: Date): string => {
       <div class="text-center" v-if="page.thumbnail">
         <img :src="page.thumbnail" alt="thumbnail" class="w-3/6 h-2/6 object-cover mx-auto">
       </div>
-      <h1>{{ page.title }}</h1>
-      <div class="flex">
+      <div class="mx-10">
+        <h1>{{ page.title }}</h1>
         <div class="flex">
-          <IconCalendarEvent />
-          <div>{{ yyyymmdd(new Date(page.date)) }}</div>
-        </div>
-        <div class="flex">
-          <IconReload />
-          <div>{{ yyyymmdd(new Date(page.update)) }}</div>
+          <div class="flex">
+            <IconCalendarEvent />
+            <div>{{ yyyymmdd(new Date(page.date)) }}</div>
+          </div>
+          <div class="flex">
+            <IconReload />
+            <div>{{ yyyymmdd(new Date(page.update)) }}</div>
+          </div>
         </div>
       </div>
       <ContentRenderer :key="page._id" :value="page"></ContentRenderer>
