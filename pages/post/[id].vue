@@ -18,16 +18,16 @@ const yyyymmdd = (dt: Date): string => {
         <img :src="page.thumbnail" alt="thumbnail" class="w-5/6 h-4/6 object-cover ">
       </div>
       <h1>{{ page.title }}</h1>
-      <!--<div class="flex">
+      <div class="flex">
         <div class="flex">
           <IconCalendarEvent />
-          <div>{{ yyyymmdd(page.date) }}</div>
+          <div>{{ (page.date) }}</div>
         </div>
         <div class="flex">
           <IconReload />
-          <div>{{ yyyymmdd(page.update) }}</div>
+          <div>{{ (page.update) }}</div>
         </div>
-      </div>-->
+      </div>
       <ContentRenderer :key="page._id" :value="page"></ContentRenderer>
     </ContentDoc>
   </div>
