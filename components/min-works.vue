@@ -1,15 +1,12 @@
 <script setup lang="ts">
 import works from "./works.ts"
-const generateWorkImgPath = (fileName: string): string => {
-  return new URL(`../assets/work-images/${fileName}.png`, import.meta.url).href
-}
 </script>
 <template>
   <div class="carousel rounded-box">
     <div v-for = "work in works" :key="work.link" class="carousel-item">
       <a :href="work.link">
         <div class="card w-40 bg-base-100 shadow-xl image-full">
-          <figure><img :src="generateWorkImgPath(work.imageName? work.imageName : '')" alt="image" /></figure>
+          <figure><img :src="work.imageName? work.imageName : ''" alt="image" /></figure>
         </div>
         <div class="card-body">
           <div class="card-title">
