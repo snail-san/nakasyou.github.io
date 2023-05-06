@@ -6,7 +6,7 @@
     </ContentDoc>
   </div>
 </template>
-<style scoped>
+<style>
 h1 {
   font-size: 2em;
 }
