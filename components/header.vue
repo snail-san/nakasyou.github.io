@@ -19,7 +19,7 @@ const close = () =>{
 }
 </script>
 <template>
-  <div class="navbar bg-base-100">
+  <div class="navbar bg-base-100 header">
     <div class="navbar-start">
       <NuxtLink class="btn btn-ghost normal-case text-xl" href="/">nakasyou's website</NuxtLink>
     </div>
@@ -41,3 +41,9 @@ const close = () =>{
     </div>
   </div>
 </template>
+<style scoped>
+.header{
+  position: sticky;
+  top:0;
+}
+</style>
