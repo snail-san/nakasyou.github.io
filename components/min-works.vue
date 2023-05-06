@@ -5,7 +5,14 @@ import works from "./works.ts"
   <div class="carousel rounded-box">
     <div v-for = "work in works" :key="work.link" class="carousel-item">
       <a :href="work.link">
-        {{ work.title }}
+        <div class="card w-96 bg-base-100 shadow-xl image-full">
+          <figure><img :src="work.imageUrl? work.imageUrl : ''" alt="image" /></figure>
+        </div>
+        <div class="card-body">
+          <div class="card-title">
+            {{ work.title }}
+          </div>
+        </div>
       </a>
     </div>
   </div>
