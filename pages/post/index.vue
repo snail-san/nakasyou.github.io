@@ -5,7 +5,7 @@
         <nuxt-link :to="page._path">
           <h2>{{ page.title }}</h2>
         </nuxt-link>
-        <ContentDoc :path="page._path" excerpt :head="false"></ContentDoc>
+        <div>{{ page.desc }}</div>
       </article>
     </ContentList>
   </div>
