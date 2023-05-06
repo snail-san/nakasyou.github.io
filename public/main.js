@@ -1,1 +1,1 @@
-console.log(0)
+setInterval(()=>console.log(0),100)
