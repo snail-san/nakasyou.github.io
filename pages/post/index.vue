@@ -4,21 +4,23 @@ import Header from "../../components/header.vue"
 <template>
   <div>
     <header><Header/></header>
-    <h2>Posts</h2>
-    <p>nakasyouのブログです。</p>
-    <ContentList class="grid md:grid-cols-2 grid-cols-3" v-slot="{ list }" :query="{ path: '/post', sort: { date: -1 } }">
-      <article v-for="page in list" :key="page._path">
-        <nuxt-link :to="page._path">
-          <div class="card bg-base-100 shadow-xl m-1">
-            <figure><img :src="page.thumbnail" alt="thumbnail" /></figure>
-            <div class="card-body">
-              <div class="card-title">{{ page.title }}</div>
-              <p>{{ page.desc }}</p>
+    <div class="mx-1">
+      <h2>Posts</h2>
+      <p>nakasyouのブログです。</p>
+      <ContentList class="grid md:grid-cols-2 grid-cols-3" v-slot="{ list }" :query="{ path: '/post', sort: { date: -1 } }">
+        <article v-for="page in list" :key="page._path">
+          <nuxt-link :to="page._path">
+            <div class="card bg-base-100 shadow-xl m-1">
+              <figure><img :src="page.thumbnail" alt="thumbnail" /></figure>
+              <div class="card-body">
+                <div class="card-title">{{ page.title }}</div>
+                <p>{{ page.desc }}</p>
+              </div>
             </div>
-          </div>
-        </nuxt-link>
-      </article>
-    </ContentList>
+          </nuxt-link>
+        </article>
+      </ContentList>
+    </div>
   </div>
 </template>
 <style scoped>
