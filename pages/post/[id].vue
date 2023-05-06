@@ -11,7 +11,7 @@ import {
         <img :src="page.thumbnail" alt="thumbnail" class="w-5/6 h-4/6 object-cover ">
       </div>
       <h1>{{ page.title }}</h1>
-      <div>
+      <div class="flex">
         <div>
           <IconCalendarEvent />
           <span>{{ page.date }}</span>
