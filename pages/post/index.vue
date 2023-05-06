@@ -3,9 +3,14 @@
     <ContentList v-slot="{ list }" :query="{ path: '/post', sort: { date: -1 } }">
       <article v-for="page in list" :key="page._path">
         <nuxt-link :to="page._path">
-          <h2>{{ page.title }}</h2>
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <figure><img :src="page.thumbnail" alt="thumbnail" /></figure>
+            <div class="card-body">
+              <div class="card-title">{{ page.title }}</div>
+              <p>{{ page.desc }}</p>
+            </div>
+          </div>
         </nuxt-link>
-        <div>{{ page.desc }}</div>
       </article>
     </ContentList>
   </div>
