@@ -3,7 +3,7 @@
 <template>
   <div class="navbar bg-base-100">
     <div class="navbar-start">
-      <a class="btn btn-ghost normal-case text-xl" htef="/">nakasyou's website</a>
+      <NuxtLink class="btn btn-ghost normal-case text-xl" href="/">nakasyou's website</NuxtLink>
     </div>
     <div class="navber-center">
       <ul class="menu menu-horizontal bg-base-100 rounded-box">
