@@ -35,6 +35,7 @@ const myDiscordIdCopy = () => {
           <div class="text-sm indent-2">中村 承太郎</div>
         </div>
         <div>Web開発と分散型アプリケーション、サイバーセキュリティに興味がある中学2年生</div>
+        <div>読書部という部活で副部長。文芸部に名称変更する計画を練っている。</div>
       </div>
       <div class="text-2xl">Skills</div>
       <div class="indent-1">
@@ -58,13 +59,37 @@ const myDiscordIdCopy = () => {
         </ul>
       </div>
       <div class="text-2xl">Works</div>
-      <MinWorks />
-      <div class="text-right">
-        <a class="btn btn-primary" href="works">
-          Show More
-        </a>
+      <div>
+        <MinWorks />
+        <div class="text-right">
+          <a class="btn btn-primary" href="works">
+            Show More
+          </a>
+        </div>
       </div>
-    </div>
+      <div class="text-2xl">Mutual Link</div>
+      <div>
+        <p>相互リンクです。追加してほしければ、Discord/Twitter/Matrixまたは何らかの連絡手段で。</p>
+        <ul>
+          <table class="table-auto">
+            <thead>
+              <tr>
+                <td>Links</td>
+                <td>Author</td>
+                <td>Date</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>はるさめのホームページに</td>
+                <td>はるさめ</td>
+                <td>2023-05-06</td>
+              </tr>
+            </tbody>
+          </table>
+        </ul>
+      </div>
+    </div> 
     <br />
     <div class="flex flex-wrap items-center justify-center">
       <a class="btn btn-outline" href="https://github.com/nakasyou">
