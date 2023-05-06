@@ -5,6 +5,12 @@
     <div class="navbar-start">
       <a class="btn btn-ghost normal-case text-xl" htef="/">nakasyou's website</a>
     </div>
+    <div class="navber-center">
+      <ul class="menu menu-horizontal bg-base-100 rounded-box">
+        <li><NuxtLink to="/post">Blog</NuxtLink></li>
+        <li><NuxtLink to="/works">Works</NuxtLink></li>
+      </ul>
+    </div>
     <div class="navber-end">
       <div class="dropdown">
         <label tabindex="0" class="btn btn-ghost lg:hidden">
