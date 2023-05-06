@@ -9,6 +9,7 @@ const works: Works = [
   {
     title: "Liberluna page",
     link: "https://liberluna.github.io",
+    desc: "Liberlunaのサイトを作りました",
   }
 ]
 
