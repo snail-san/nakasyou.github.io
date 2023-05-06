@@ -15,8 +15,7 @@ onMounted(()=>{
 })
 const close = () =>{
   console.log('close')
-  dropdownBtn.value.blur()
-  dropdown.value.blur()
+  document.activeElement.blur()
 }
 </script>
 <template>
