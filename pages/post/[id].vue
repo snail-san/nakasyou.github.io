@@ -3,6 +3,13 @@ import {
   IconCalendarEvent,
   IconReload,
 } from '@tabler/icons-vue'
+
+const yyyymmdd = (dt: Date): string => {
+  const y = dt.getFullYear()
+  const m = ('00' + (dt.getMonth()+1)).slice(-2)
+  const d = ('00' + dt.getDate()).slice(-2)
+  return y + '-' + m + '-' + d
+}
 </script>
 <template>
   <div>
@@ -12,13 +19,13 @@ import {
       </div>
       <h1>{{ page.title }}</h1>
       <div class="flex">
-        <div>
+        <div class="flex">
           <IconCalendarEvent />
-          <span>{{ page.date }}</span>
+          <div>{{ yyyymmdd(page.date) }}</div>
         </div>
-        <div>
+        <div class="flex">
           <IconReload />
-          <span>{{ page.update }}</span>
+          <div>{{ yyyymmdd(page.update) }}</div>
         </div>
       </div>
       <ContentRenderer :key="page._id" :value="page"></ContentRenderer>
