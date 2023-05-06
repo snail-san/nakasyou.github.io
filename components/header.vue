@@ -7,9 +7,8 @@ const dropdownBtn = ref(null)
 onMounted(()=>{
 
   window.addEventListener('click', (event) => {
-    console.log(dropdown)
-    if(!dropdown.contains(event.target)){
-      dropdownBtn.blur()
+    if(!dropdown.value.contains(event.target)){
+      dropdownBtn.value.blur()
     }
   })
 
