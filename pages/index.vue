@@ -58,6 +58,7 @@ const myDiscordIdCopy = () => {
       <div class="text-2xl">Works</div>
       <MinWorks />
     </div>
+    <br />
     <div class="flex flex-wrap items-center justify-center">
       <a class="btn btn-outline" href="https://github.com/nakasyou">
         <IconBrandGithub />

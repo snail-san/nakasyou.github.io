@@ -3,7 +3,7 @@ import works from "./works.ts"
 </script>
 <template>
   <div class="carousel rounded-box">
-    <div v-for = "work in (works.slice(0,10).reverse())" :key="work.link" class="carousel-item">
+    <div v-for = "work in (works.slice(0,10).reverse())" :key="work.link" class="carousel-item mx-1">
       <a :href="work.link">
         <div class="card w-40 bg-base-100 shadow-xl image-full">
           <figure><img :src="work.imageUrl? work.imageUrl : ''" :alt="work.title" /></figure>
