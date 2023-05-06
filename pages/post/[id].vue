@@ -31,8 +31,8 @@ const yyyymmdd = (dt: Date): string => {
             <div>{{ yyyymmdd(new Date(page.update)) }}</div>
           </div>
         </div>
+        <ContentRenderer :key="page._id" :value="page"></ContentRenderer>
       </div>
-      <ContentRenderer :key="page._id" :value="page"></ContentRenderer>
     </ContentDoc>
   </div>
 </template>
