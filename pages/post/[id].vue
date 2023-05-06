@@ -1,7 +1,11 @@
 <template>
   <div>
     <ContentDoc v-slot="{ doc: page }">
+      <div class="text-center">
+        <img :src="page.thumbnail" alt="thumbnail" class="w-5/6 h-4/6 object-cover ">
+      </div>
       <h1>{{ page.title }}</h1>
+      <div></div>
       <ContentRenderer :key="page._id" :value="page"></ContentRenderer>
     </ContentDoc>
   </div>
