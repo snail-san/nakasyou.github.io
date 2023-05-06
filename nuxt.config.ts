@@ -9,4 +9,10 @@ export default defineNuxtConfig({
   content: {
     
   },
+  head: {
+    script: [
+      { src: 'https://www.googletagmanager.com/gtag/js?id=G-X7S9B5WF1H', async: true},
+      { src: '/script/google-analytics.js' },
+    ],
+  },
 })
