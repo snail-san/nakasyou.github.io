@@ -21,7 +21,7 @@ const yyyymmdd = (dt: Date): string => {
       <div class="flex">
         <div class="flex">
           <IconCalendarEvent />
-          <div>{{ yyyymmdd(page.date) }}</div>
+          <div>{{ typeof (page.date) }}</div>
         </div>
         <div class="flex">
           <IconReload />
