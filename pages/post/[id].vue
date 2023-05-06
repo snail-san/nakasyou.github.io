@@ -15,7 +15,7 @@ const yyyymmdd = (dt: Date): string => {
   <div>
     <ContentDoc v-slot="{ doc: page }">
       <div class="text-center">
-        <img :src="page.thumbnail" alt="thumbnail" class="w-3/6 h-2/6 object-cover ">
+        <img :src="page.thumbnail" alt="thumbnail" class="w-3/6 h-2/6 object-cover mx-auto">
       </div>
       <h1>{{ page.title }}</h1>
       <div class="flex">
