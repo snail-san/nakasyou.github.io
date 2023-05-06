@@ -8,6 +8,7 @@ import {
 } from '@tabler/icons-vue'
 import SimpleIcons from "../components/simpleicons.vue"
 import MinWorks from "../components/min-works.vue"
+import Header from "../components/header.vue"
 
 const myDiscordIdCopy = () => {
   if(navigator.clipboard){
@@ -17,6 +18,7 @@ const myDiscordIdCopy = () => {
 </script>
 <template>
   <div>
+    <header><Header/></header>
     <div class="text-center text-3xl">nakasyou's profile</div>
     <div class="flex items-center justify-center text-center">
       <div><img
