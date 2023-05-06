@@ -71,7 +71,7 @@ const myDiscordIdCopy = () => {
       <div>
         <p>相互リンクです。追加してほしければ、Discord/Twitter/Matrixまたは何らかの連絡手段で。</p>
         <ul>
-          <table class="table-auto">
+          <table class="table w-full">
             <thead>
               <tr>
                 <td>Links</td>
@@ -81,7 +81,7 @@ const myDiscordIdCopy = () => {
             </thead>
             <tbody>
               <tr>
-                <td>はるさめのホームページに</td>
+                <td><a href="https://harusamemelon.github.io">はるさめのホームページ</a></td>
                 <td>はるさめ</td>
                 <td>2023-05-06</td>
               </tr>
