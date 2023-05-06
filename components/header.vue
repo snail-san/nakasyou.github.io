@@ -13,7 +13,10 @@ onMounted(()=>{
   })
 
 })
-
+const close = () =>{
+  dropdownBtn.value.blur()
+  dropdown.value.blur()
+}
 </script>
 <template>
   <div class="navbar bg-base-100">
@@ -32,6 +35,7 @@ onMounted(()=>{
         <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
           <li><NuxtLink to="/post">Blog</NuxtLink></li>
           <li><NuxtLink to="/works">Works</NuxtLink></li>
+          <li @click="close">Close</li>
         </ul>
       </div>
     </div>
