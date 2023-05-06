@@ -11,7 +11,7 @@ export default defineNuxtConfig({
   },
   head: {
     script: [
-
+      { src: "/main.js" },
     ],
   },
 })
