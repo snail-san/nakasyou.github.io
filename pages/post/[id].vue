@@ -26,8 +26,8 @@ const yyyymmdd = (dt: Date): string => {
         <div class="flex">
           <IconReload />
           <div>{{ yyyymmdd(page.update) }}</div>
-        </div>-->
-      </div>
+        </div>
+      </div>-->
       <ContentRenderer :key="page._id" :value="page"></ContentRenderer>
     </ContentDoc>
   </div>
