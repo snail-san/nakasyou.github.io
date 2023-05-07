@@ -4,6 +4,7 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     '@nuxt/content',
     'nuxt-gtag',
+    ['@funken-studio/sitemap-nuxt-3',{ generateOnBuild: true }],
   ],
   buildModules: ["@nuxtjs/tailwindcss"],
   css: ["@/assets/styles/tailwind.css"],
@@ -17,5 +18,6 @@ export default defineNuxtConfig({
   },
   gtag: {
     id: "G-4MMWC0RS80",
-  }
+  },
+
 })
