@@ -19,7 +19,8 @@ const close = () =>{
 }
 </script>
 <template>
-  <div class="navbar bg-base-100 sticky top-0">
+  <div class="sticky top-0">
+  <div class="navbar bg-base-100">
     <div class="navbar-start">
       <NuxtLink class="btn btn-ghost normal-case text-xl" href="/">nakasyou's website</NuxtLink>
     </div>
@@ -39,5 +40,6 @@ const close = () =>{
         </ul>
       </div>
     </div>
+  </div>
   </div>
 </template>
