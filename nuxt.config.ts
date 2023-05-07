@@ -1,3 +1,11 @@
+import { $content } from "@nuxt/content"
+
+async function getContents() => {
+  const files = await $content({ deep: true }).only(["path"]).fetch();
+
+  return files.map((file) => (file.path === "/index" ? "/" : file.path));
+};
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
@@ -19,5 +27,9 @@ export default defineNuxtConfig({
   gtag: {
     id: "G-4MMWC0RS80",
   },
-
+  sitemap: {
+    routes() {
+      return getRoutes();
+    },
+  },
 })
