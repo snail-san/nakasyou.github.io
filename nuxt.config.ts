@@ -22,6 +22,6 @@ export default defineNuxtConfig({
     id: "G-4MMWC0RS80",
   },
   sitemap: {
-    hostname: "nakasyou.github.io",
+    hostname: "https://nakasyou.github.io",
   },
 })
