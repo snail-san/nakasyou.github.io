@@ -28,6 +28,7 @@ const close = () =>{
       <ul class="menu menu-horizontal bg-base-100 rounded-box max-lg:hidden">
         <li><NuxtLink to="/post">Blog</NuxtLink></li>
         <li><NuxtLink to="/works">Works</NuxtLink></li>
+        <li><NuxtLink to="/projects">Projects</NuxtLink></li>
       </ul>
       <div class="dropdown dropdown-end" ref="dropdown">
         <label tabindex="0" class="btn btn-ghost lg:hidden" ref="dropdownBtn">
@@ -36,6 +37,7 @@ const close = () =>{
         <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
           <li><NuxtLink to="/post">Blog</NuxtLink></li>
           <li><NuxtLink to="/works">Works</NuxtLink></li>
+          <li><NuxtLink to="/projects">Projects</NuxtLink></li>
           <li><button @click="close" class="btn btn-ghost">Close</button></li>
         </ul>
       </div>
