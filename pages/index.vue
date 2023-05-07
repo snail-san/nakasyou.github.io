@@ -18,7 +18,7 @@ const myDiscordIdCopy = () => {
 </script>
 <template>
   <div>
-    <header><Header/></header>
+    <Header/>
     <div class="text-center text-3xl">nakasyou's profile</div>
     <div class="flex items-center justify-center text-center">
       <div><img
