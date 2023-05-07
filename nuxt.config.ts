@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   modules: [
     "@nuxtjs/tailwindcss",
     '@nuxt/content',
+    'nuxt-gtag',
   ],
   buildModules: ["@nuxtjs/tailwindcss"],
   css: ["@/assets/styles/tailwind.css"],
@@ -14,4 +15,7 @@ export default defineNuxtConfig({
       { src: "/main.js" },
     ],
   },
+  gtag: {
+    id: "G-4MMWC0RS80",
+  }
 })
