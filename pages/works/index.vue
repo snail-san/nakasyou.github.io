@@ -7,7 +7,7 @@ import works from "../../components/works.ts"
   <header><Header /></header>
   <div class="mx-10">
     <h1 class="text-3xl">Works</h1>
-    <div class="grid grid-cols-4 gap-4"
+    <div class="grid grid-cols-4 gap-4">
       <div v-for = "work in works.reverse()" :key="work.link" class="mx-1">
         <Work :work="work" />
       </div>
