@@ -89,7 +89,11 @@ const myDiscordIdCopy = () => {
           </table>
         </ul>
       </div>
-    </div> 
+    </div>
+    <div>
+      <div class="text-xl">Ads(test)</div>
+      <iframe style="overflow:hidden;border:1px solid #000" scrolling="no" src="https://scratchads.deno.dev/ad/4-3?w=260" width="260" height="173.33333333333334">ScratchAds loading...</iframe>
+    </div>
     <br />
     <div class="flex flex-wrap items-center justify-center">
       <a class="btn btn-outline" href="https://github.com/nakasyou">
