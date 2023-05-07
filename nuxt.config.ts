@@ -1,10 +1,10 @@
 import { $content } from "@nuxt/content"
 
-async function getContents() => {
+async function getContents() {
   const files = await $content({ deep: true }).only(["path"]).fetch();
 
   return files.map((file) => (file.path === "/index" ? "/" : file.path));
-};
+}
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
