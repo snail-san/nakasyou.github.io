@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { type Work } from "../works.ts"
 
-const props = defineProps<
+const props = defineProps<{
   work: Work
->()
+}>()
 </script>
 <template>
   <a :href="work.link">
