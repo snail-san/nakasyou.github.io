@@ -14,7 +14,7 @@ const yyyymmdd = (dt: Date): string => {
 </script>
 <template>
   <div>
-    <header><Header/></header>
+    <Header/>
     <ContentDoc v-slot="{ doc: page }">
       <div class="text-center" v-if="page.thumbnail">
         <img :src="page.thumbnail" alt="thumbnail" class="w-3/6 h-2/6 object-cover mx-auto">
