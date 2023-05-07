@@ -31,5 +31,6 @@ export default defineNuxtConfig({
     routes() {
       return getRoutes();
     },
+    hostname: "nakasyou.github.io",
   },
 })
