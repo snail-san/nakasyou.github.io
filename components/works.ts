@@ -1,9 +1,9 @@
-interface Work {
+export interface Work {
   imageUrl?: string
   title: string
   link: string
 }
-type Works = Work[]
+export type Works = Work[]
 
 const works: Works = [
   {
