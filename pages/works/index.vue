@@ -4,7 +4,7 @@ import Work from "../../components/works/work.vue"
 import works from "../../components/works.ts"
 </script>
 <template>
-  <header><Header /></header>
+  <Header />
   <div class="mx-10">
     <h1 class="text-3xl">Works</h1>
     <div class="grid grid-cols-4 gap-4">
