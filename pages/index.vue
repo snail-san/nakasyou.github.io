@@ -69,7 +69,11 @@ const myDiscordIdCopy = () => {
       </div>
       <div class="text-2xl">Mutual Link</div>
       <div>
-        <p>相互リンクです。追加してほしければ、Discord/Twitter/Matrixまたは何らかの連絡手段で。</p>
+        <p>相互リンクです。追加してほしければ、
+          <a href="https://github.com/nakasyou/nakasyou.github.io/issues/new?assignees=&labels=&template=相互リンクの追加要望.md&title=相互リンクの追加要望" class="link">
+            Issue
+          </a>
+         ,Discord/Twitter/Matrixまたは何らかの連絡手段で。</p>
         <ul>
           <table class="table w-full">
             <thead>
