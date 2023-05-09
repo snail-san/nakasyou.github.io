@@ -85,6 +85,11 @@ const myDiscordIdCopy = () => {
                 <td>はるさめ</td>
                 <td>2023-05-06</td>
               </tr>
+              <tr>
+                <td><a href="https://p-nutsk.github.io" class="link">P_nutsKのページ</a></td>
+                <td>P_nutsK</td>
+                <td>2023-05-09</td>
+              </tr>
             </tbody>
           </table>
         </ul>
