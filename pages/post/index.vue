@@ -20,7 +20,8 @@ import Header from "../../components/header.vue"
               </div>
             </nuxt-link>
           </article>
-      </ContentList>
+        </ContentList>
+      </div>
     </div>
   </div>
 </template>
