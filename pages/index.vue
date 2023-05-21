@@ -128,9 +128,11 @@ const myDiscordIdCopy = () => {
           <span>nakasyou#1395</span>
         </a>
       </div>
-      <a class="btn btn-outline flex" href="https://scratch.mit.edu/users/nakasyou1103">
-        <SimpleIcons icon="scratch" />
-        <span>@nakasyou1103</span>
+      <a class="btn btn-outline" href="https://scratch.mit.edu/users/nakasyou1103">
+        <div class="flex">
+          <SimpleIcons icon="scratch" />
+          <div>@nakasyou1103</div>
+        </div>
       </a>
       <a class="btn btn-outline" href="https://github.com/nakasyou/nakasyou.github.io">
         <IconCode/>
