@@ -61,7 +61,7 @@ h6 {
 p{
   margin: 1em 0;
 }
-.md a[href]{
+.md a:not([href^="#"]){
   color: blue;
 }
 </style>
