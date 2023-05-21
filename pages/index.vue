@@ -94,6 +94,11 @@ const myDiscordIdCopy = () => {
                 <td>P_nutsK</td>
                 <td>2023-05-09</td>
               </tr>
+              <tr>
+                <td><a href="https://rangem-kishiyama.github.io" class="link">RangeM Kishiyamaのブログ</a></td>
+                <td>RangeM Kishiyama</td>
+                <td>2023-05-21</td>
+              </tr>
             </tbody>
           </table>
         </ul>
