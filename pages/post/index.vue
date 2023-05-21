@@ -44,4 +44,10 @@ h5 {
 h6 {
   font-size: 0.67em;
 }
+p{
+  margin: 1em 0;
+}
+a{
+  color: red;
+}
 </style>
