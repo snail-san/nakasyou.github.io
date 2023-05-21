@@ -7,7 +7,7 @@ import Header from "../../components/header.vue"
     <div class="mx-10">
       <h2>Posts</h2>
       <p>nakasyouのブログです。</p>
-      <div class="grid grid-cols-2 gap-4">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
         <ContentList class="" v-slot="{ list }" :query="{ path: '/post', sort: { date: -1 } }">
           <article v-for="page in list" :key="page._path">
             <nuxt-link :to="page._path">
