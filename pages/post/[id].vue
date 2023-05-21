@@ -61,7 +61,7 @@ h6 {
 p{
   margin: 1em 0;
 }
-.md a{
-  color: red;
+.md a[href]{
+  color: blue;
 }
 </style>
