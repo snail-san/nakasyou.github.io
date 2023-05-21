@@ -32,7 +32,9 @@ const yyyymmdd = (dt: Date): string => {
           </div>
         </div>
         <hr />
-        <ContentRenderer :key="page._id" :value="page"></ContentRenderer>
+        <div class="md">
+          <ContentRenderer :key="page._id" :value="page"></ContentRenderer>
+        </div>
       </div>
     </ContentDoc>
   </div>
@@ -55,5 +57,11 @@ h5 {
 }
 h6 {
   font-size: 0.67em;
+}
+p{
+  margin: 1em 0;
+}
+.md a{
+  color: red;
 }
 </style>
