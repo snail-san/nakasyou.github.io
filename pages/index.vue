@@ -139,5 +139,11 @@ const myDiscordIdCopy = () => {
         <span>Source Code</span>
       </a>
     </div>
+    <div class="flex flex-wrap">
+      <div>Onion mirror:</div>
+      <div class="w-full overflow-x-scroll">
+        <a href="http://baf33sebowvjtlnkcljqjssb3vsw2po7sayehofs7d576s3j22bfqwid.onion" class="link">baf33sebowvjtlnkcljqjssb3vsw2po7sayehofs7d576s3j22bfqwid.onion</a>
+      </div>
+    </div>
   </div>
 </template>
