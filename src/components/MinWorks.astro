@@ -1,7 +1,7 @@
 ---
 import works from "./works.ts"
 ---
-<div class="carousel rounded-box">
+<div class="carousel rounded-box w-full overflow-x-scroll">
   {
     [...works].slice(0,10).reverse().map(work => {
       return <div class="carousel-item mx-1">
