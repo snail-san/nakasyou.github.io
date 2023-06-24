@@ -1,9 +1,8 @@
-<script setup lang="ts">
-import Header from "../../components/header.vue"
-</script>
-<template>
+---
+import Layout from "../../layouts/Layout.vue"
+---
+<Layout>
   <div>
-    <Header/>
     <div class="mx-10">
       <h2>Posts</h2>
       <p>nakasyouのブログです。</p>
@@ -24,8 +23,8 @@ import Header from "../../components/header.vue"
       </div>
     </div>
   </div>
-</template>
-<style scoped>
+</Layout>
+<style>
 h1 {
   font-size: 2em;
 }

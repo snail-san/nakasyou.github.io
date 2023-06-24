@@ -1,0 +1,23 @@
+---
+import * as simpleicons from "simple-icons"
+
+export interface Props {
+  class: string
+  icon: string
+}
+
+interface Icon {
+  title: string
+  slug: string
+  svg: string
+  path: string
+}
+const props = Astro.props
+
+const iconKey = "si" + props.icon[0].toUpperCase()+props.icon.slice(1).toLowerCase()
+const icon = (simpleicons as Record<string,Icon>)[iconKey]
+---
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="tabler-icon">
+  <title>{ icon.title }</title>
+  <path d={ icon.path } />
+</svg> 
