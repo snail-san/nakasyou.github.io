@@ -10,6 +10,9 @@ dependencies:
   '@astrojs/vue':
     specifier: ^2.2.1
     version: 2.2.1(@babel/core@7.22.5)(astro@2.6.6)(vite@4.3.9)(vue@3.3.4)
+  '@tabler/icons-vue':
+    specifier: ^2.22.0
+    version: 2.22.0(vue@3.3.4)
   '@tailwindcss/typography':
     specifier: ^0.5.9
     version: 0.5.9(tailwindcss@3.3.2)
@@ -812,6 +815,19 @@ packages:
       open: 9.1.0
       picocolors: 1.0.0
       tslib: 2.5.3
+    dev: false
+
+  /@tabler/icons-vue@2.22.0(vue@3.3.4):
+    resolution: {integrity: sha512-G7G7KM4pxbsitquh18Y6RGwlDRAMvS/XX9Gm/1dbQxS+a2DkcDJcofFk7v+6C3tEn8hc6Pdit/cWbO2vN7aGyw==}
+    peerDependencies:
+      vue: '>=3.0.1'
+    dependencies:
+      '@tabler/icons': 2.22.0
+      vue: 3.3.4
+    dev: false
+
+  /@tabler/icons@2.22.0:
+    resolution: {integrity: sha512-lOsGHqRPIKNARMWHHFkUUJH78C8ptQmUcDnumFBUI4YLRKFouKa7uAZL3ZfuH0HjDpOhsnWqUYZ7FhMCLcGpAQ==}
     dev: false
 
   /@tailwindcss/typography@0.5.9(tailwindcss@3.3.2):
