@@ -1,0 +1,45 @@
+---
+import Layout from "../../layouts/Layout.astro"
+
+const posts = await Astro.glob("../post/*/index.mdx")
+const thumbnails = import.meta.glob("../post/*/thumbnail.png")
+
+const thumbnailData: Record<string,string> = {}
+for (const post of posts) {
+  const thumbnailPath = ".."+post.url+"/thumbnail.png"
+  let thumbnail: string = ""
+  if (thumbnailPath in thumbnails){
+    const thumbnailModule = await thumbnails[thumbnailPath]()
+    thumbnail = (thumbnailModule as {
+      default: string
+    }).default
+  }
+  thumbnailData[post.url as string] = thumbnail
+}
+
+posts.reverse()
+---
+<Layout>
+  <div>
+    <div class="mx-10">
+      <h2>Posts</h2>
+      <p>nakasyouのブログです。</p>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 items-stretch">
+        {
+          posts.map(post => {
+            const thumbnail = thumbnailData[post.url as string]
+            return <a href={ post.url }>
+              <div class="card bg-base-100 shadow-xl m-1">
+                <figure><img src={ thumbnail } alt="thumbnail" /></figure>
+                <div class="card-body">
+                  <div class="card-title">{ post.frontmatter.title }</div>
+                  <p>{ post.frontmatter.desc }</p>
+                </div>
+              </div>
+            </a>
+          })
+        }
+      </div>
+    </div>
+  </div>
+</Layout>

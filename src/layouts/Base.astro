@@ -1,0 +1,26 @@
+---
+export type Meta = Record<string, string>
+export interface Props {
+  title: string
+  description: string
+  metas: Meta[]
+}
+---
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{Astro.props.title}</title>
+    <meta name="description" content={Astro.props.description} />
+
+    {
+      Astro.props.metas.map(meta => {
+        return <meta {...meta}/>
+      })
+    }
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
