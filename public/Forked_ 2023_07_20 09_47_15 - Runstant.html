@@ -1,0 +1,54 @@
+<!doctype html>
+ 
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    
+    <title>Forked: 2023/07/20 09:47:15 - Runstant</title>
+    <meta name="description" content="思いたったらすぐ開発. プログラミングに革命を..." />
+    
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.2.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>${style}</style>
+  </head>
+  <body>
+    <div>
+      <div class="text-center">
+        <div class="text-3xl">ゲテモノ探し ふにふに</div>
+        <div id="inp">
+        <div class="my-5">
+          <input type="text" placeholder="クレジットカード番号" class="input input-bordered w-full max-w-xs" inputMode="numeric" pattern="\d*"/>
+        </div>
+        <div>
+          <div class="form-control mx-20">
+  <label class="cursor-pointer label">
+    <span class="label-text">利用規約に同意</span>
+    <input type="checkbox" class="checkbox checkbox-accent" />
+  </label>
+</div>
+        </div>
+        <div class="my-10">
+          <button class="btn btn-outline btn-primary" onclick="kakin(this)">課金する</button>
+        </div>
+        </div>
+        
+      </div>
+      <div class="text-center" hidden id="rum">
+        <span class="loading loading-dots loading-lg"></span>
+        <br>
+        <span>課金しています。しばらくお待ちください</span>
+      </div>
+    </div>
+    <script>function kakin(el) {
+  document.getElementById("rum").hidden = false;
+  setTimeout(function() {
+    document.getElementById('inp').innerHTML = `課金に完了しました！<br><div class="text-2xl mt-10">¥5730000</div>後日請求します。`
+  document.getElementById("rum").hidden = true;
+  }, 3000)
+}</script>
+  </body>
+</html>
+
