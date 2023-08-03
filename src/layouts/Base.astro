@@ -14,7 +14,14 @@ export interface Props {
     <title>{Astro.props.title}</title>
     <meta name="description" content={Astro.props.description} />
     <link rel="sitemap" href="/sitemap-index.xml">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XCPC66GQ5T"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
     
+      gtag('config', 'G-XCPC66GQ5T');
+    </script>
     {
       Astro.props.metas.map(meta => {
         return <meta {...meta}/>
