@@ -1,0 +1,53 @@
+---
+date: 2023-06-25
+title: TipTapのプラグインを自作する
+desc: Scratchプロジェクト圧縮ツールを作ってみた
+update: 2023-06-25
+tags: 
+  - 2
+layout: ../../../layouts/Post.astro
+---
+TipTapのパーツの作成方法を解説します。
+
+## 目標
+[こんな感じ](https://runstant.com/nakasyou/projects/1c441154)に、background-colorが変わるやつです。
+このRunstantでは、esm.shをインポートに使用していますが、Viteなどをつかってもかまいません。
+## 作る
+パーツを作る方法はいろいろあります。
+この記事では、「Mark」という種類のパーツを作成します。
+```ts
+import {
+  Mark, 
+  mergeAttributes, // あとで使う
+} from "@tiptap/core" // Markをインポート
+
+const MyPlugin = Mark.create({
+  // ここにプラグインを書く
+})
+```
+基本はこんな感じです。
+
+パーツの名前を、`sheet`として作っていきます。
+```ts
+const Sheet = Mark.create({
+  name: 'sheet', // 名前
+  priority: 1000, // プラグインの優先度
+})
+```
+これで、空のプラグインが完成です！
+空なので、何もできません。なので、レンダリングできるようにしましょう！
+```ts
+...
+  renderHTML({ HTMLAttributes }) {
+    return ['span', mergeAttributes(HTMLAttributes, {
+      style: "background-color: #f88;",
+      class: "sheet",
+    }), 0];
+  },
+...
+```
+配列を返していることがわかりますね。3つの要素を持った配列です。
+`[<要素のタグ名>, <属性が入ったRecordのObject>, <知らない>]`を示しています。
+
+`HTMLAttributes`は基本のHTML属性で、追加する属性と`mergeAttributes`で結合しています。
+追加する属性は、識別するためのクラス名と、適応するスタイルが書かれています。
