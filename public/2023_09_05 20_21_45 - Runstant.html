@@ -1,0 +1,52 @@
+<!doctype html>
+ 
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    
+    <title>仮想メール</title>
+    <meta name="description" content="仮想メール" />
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-background text-on-background">
+    <div class="m-4">
+      <div class="text-2xl font-mono">Mail</div>
+      <div class="rounded-lg border drop-shadow-lg bg-white text-black ">
+        <div class="bg-secondary text-on-secondary p-2 rounded-lg my-2 mx-3">新規メール</div>
+        <div class="flex my-2 mx-3 justify-between">
+          <div>宛先</div>
+          <div>
+            <input class="w-full rounded-none border" placeholder="宛先を入力"/>
+          </div>
+        </div>
+        <div class="w-full bg-outline h-[1px]"></div>
+        <div class="flex my-2 mx-3 justify-between">
+          <div>件名</div>
+          <div>
+            <input class="rounded-none border" width="0" placeholder="件名"/>
+          </div>
+        </div>
+        <div class="w-full bg-outline h-[1px]"></div>
+        <div class="p-2">
+          <div class="mx-1">本文:</div>
+          <div contenteditable="true" class="p-2"></div>
+        </div>
+      </div>
+    </div>
+    <script type="module">import { mikanUI } from 'https://esm.sh/mikanui'
+
+
+window.tailwind.config = {
+  plugins: [
+    mikanUI({
+      seedColor: '#00f'
+    })
+  ]
+}
+</script>
+  </body>
+</html>
+
